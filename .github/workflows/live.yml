@@ -24,14 +24,14 @@ jobs:
         env:
           APP_ID: ${{ secrets.APP_ID }}
           APP_SECRET: ${{ secrets.APP_SECRET }}
-          USER_ID: ${{ secrets.USER_ID }}
-          TEMPLATE_ID: ${{ secrets.TEMPLATE_ID }}
           WEATHER_KEY: ${{ secrets.WEATHER_KEY }}
           RAINBOW_KEY: ${{ secrets.RAINBOW_KEY }}
-          NICK_NAME: ${{ secrets.NICK_NAME }}
-          USER_CITY: ${{ secrets.USER_CITY }}
-          SINCE_DATE: ${{ secrets.SINCE_DATE }}
-          BIRTHDAY: ${{ secrets.BIRTHDAY }}
+          USER_ID: ${{ vars.USER_ID }}
+          TEMPLATE_ID: ${{ vars.TEMPLATE_ID }}
+          NICK_NAME: ${{ vars.NICK_NAME }}
+          USER_CITY: ${{ vars.USER_CITY }}
+          SINCE_DATE: ${{ vars.SINCE_DATE }}
+          BIRTHDAY: ${{ vars.BIRTHDAY }}
         run: |
           yq -i '.wechat.appId="${{ env.APP_ID }}"' config/config.yaml
           yq -i '.wechat.appSecret="${{ env.APP_SECRET }}"' config/config.yaml
