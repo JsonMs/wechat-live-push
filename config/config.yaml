@@ -1,13 +1,13 @@
 wechat:
-  appId: 'YOUR_APPID'
-  appSecret: 'YOUR_APP_SECRET'
-  userId: 'YOUR_USER_ID'
-  templateId: 'YOUR_TEMPLATE_ID'
-  weatherKey: "YOUR_WEATHER_KEY"
-  rainbowKey: 'YOUR_RAINBOW_KEY'
+  appId: '${{ secrets.APP_ID }}'
+  appSecret: '${{ secrets.APP_SECRET }}'
+  userId: '${{ secrets.USER_ID }}'
+  templateId: '${{ secrets.TEMPLATE_ID }}'
+  weatherKey: "${{ secrets.WEATHER_KEY }}"
+  rainbowKey: '${{ secrets.RAINBOW_KEY }}'
 
   ## 模版使用部分
-  nickName: 'YOUR_NAME'
-  userCity: 'YOUR_CITY'
-  sinceDate: 'SINCE_DATE'
-  birthday: 'BIRTHDAY'
+  nickName: '${{ secrets.NICK_NAME }}'
+  userCity: '${{ secrets.USER_CITY }}'
+  sinceDate: '${{ secrets.SINCE_DATE }}'
+  birthday: '${{ secrets.BIRTHDAY }}'
