@@ -164,8 +164,6 @@ def send_message():
                       'AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.0.0 Safari/537.36'
     }
 
-    dumps = json.dumps(payload)
-    print(dumps)
     response = util.request_post(url, headers=headers, payload=payload)
     if response["errcode"] == 40037:
         print("推送消息失败，请检查模板id是否正确")
