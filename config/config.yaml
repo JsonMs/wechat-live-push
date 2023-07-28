@@ -1,0 +1,13 @@
+wechat:
+  appId: 'YOUR_APPID'
+  appSecret: 'YOUR_APP_SECRET'
+  userId: 'YOUR_USER_ID'
+  templateId: 'YOUR_TEMPLATE_ID'
+  weatherKey: "YOUR_WEATHER_KEY"
+  rainbowKey: 'YOUR_RAINBOW_KEY'
+
+  ## 模版使用部分
+  nickName: 'YOUR_NAME'
+  userCity: 'YOUR_CITY'
+  sinceDate: 'SINCE_DATE'
+  birthday: 'BIRTHDAY'

@@ -1,0 +1,18 @@
+📅: {{date.DATA}}
+早上好{{nick_name.DATA}}，今天又是元气满满的一天！🎉
+
+☁️️: {{weather.DATA}}
+🌡️: {{temp.DATA}}°C  {{temp_max.DATA}}°C～{{temp_min.DATA}}°C
+⛰️-🌡️体感: {{feels_like.DATA}}°C
+📨-👗{{index_name3.DATA}}: {{index_category3.DATA}}
+🪁:{{index_text3.DATA}}{{3x.DATA}}
+📨-💄{{index_name13.DATA}}: {{index_category13.DATA}}
+🪁:{{index_text13.DATA}}{{13x.DATA}}
+📨-⛱️{{index_name16.DATA}}: {{index_category16.DATA}}
+🪁:{{index_text16.DATA}}{{16x.DATA}}
+
+⛩️ 今天是我们开始的第{{since_days.DATA}}天
+🎂: {{birth_text.DATA}}
+
+🌈: {{rainbow.DATA}}{{rainbowx.DATA}}
+🏝️: {{note_en.DATA}}{{note_enx.DATA}}
