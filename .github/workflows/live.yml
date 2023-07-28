@@ -20,6 +20,18 @@ jobs:
         run: |
           python -m pip install --upgrade pip
           pip3 install -r requirements.txt
-      - name: weixin
+      - name: Replace value in YAML file
+        run: |
+          yq -i '.wechat.appId="${{ secrets.APP_ID }}"' config/config.yaml
+          yq -i '.wechat.appSecret="${{ secrets.APP_SECRET }}"' config/config.yaml
+          yq -i '.wechat.userId="${{ secrets.USER_ID }}"' config/config.yaml
+          yq -i '.wechat.templateId="${{ secrets.TEMPLATE_ID }}"' config/config.yaml
+          yq -i '.wechat.weatherKey="${{ secrets.WEATHER_KEY }}"' config/config.yaml
+          yq -i '.wechat.rainbowKey="${{ secrets.RAINBOW_KEY }}"' config/config.yaml
+          yq -i '.wechat.nickName="${{ secrets.NICK_NAME }}"' config/config.yaml
+          yq -i '.wechat.userCity="${{ secrets.USER_CITY }}"' config/config.yaml
+          yq -i '.wechat.sinceDate="${{ secrets.SINCE_DATE }}"' config/config.yaml
+          yq -i '.wechat.birthday="${{ secrets.BIRTHDAY }}"' config/config.yaml
+      - name: live
         run: |
           python3 main.py
