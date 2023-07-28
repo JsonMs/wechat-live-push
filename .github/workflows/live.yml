@@ -32,6 +32,8 @@ jobs:
           yq -i '.wechat.userCity="${{ secrets.USER_CITY }}"' config/config.yaml
           yq -i '.wechat.sinceDate="${{ secrets.SINCE_DATE }}"' config/config.yaml
           yq -i '.wechat.birthday="${{ secrets.BIRTHDAY }}"' config/config.yaml
+      - name: View YAML
+        run: cat config/config.yaml
       - name: live
         run: |
           python3 main.py
