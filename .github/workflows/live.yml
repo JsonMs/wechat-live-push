@@ -21,17 +21,28 @@ jobs:
           python -m pip install --upgrade pip
           pip3 install -r requirements.txt
       - name: Replace value in YAML file
+        env:
+          APP_ID: ${{ secrets.APP_ID }}
+          APP_SECRET: ${{ secrets.APP_SECRET }}
+          USER_ID: ${{ secrets.USER_ID }}
+          TEMPLATE_ID: ${{ secrets.TEMPLATE_ID }}
+          WEATHER_KEY: ${{ secrets.WEATHER_KEY }}
+          RAINBOW_KEY: ${{ secrets.RAINBOW_KEY }}
+          NICK_NAME: ${{ secrets.NICK_NAME }}
+          USER_CITY: ${{ secrets.USER_CITY }}
+          SINCE_DATE: ${{ secrets.SINCE_DATE }}
+          BIRTHDAY: ${{ secrets.BIRTHDAY }}
         run: |
-          yq -i '.wechat.appId="${{ secrets.APP_ID }}"' config/config.yaml
-          yq -i '.wechat.appSecret="${{ secrets.APP_SECRET }}"' config/config.yaml
-          yq -i '.wechat.userId="${{ secrets.USER_ID }}"' config/config.yaml
-          yq -i '.wechat.templateId="${{ secrets.TEMPLATE_ID }}"' config/config.yaml
-          yq -i '.wechat.weatherKey="${{ secrets.WEATHER_KEY }}"' config/config.yaml
-          yq -i '.wechat.rainbowKey="${{ secrets.RAINBOW_KEY }}"' config/config.yaml
-          yq -i '.wechat.nickName="${{ secrets.NICK_NAME }}"' config/config.yaml
-          yq -i '.wechat.userCity="${{ secrets.USER_CITY }}"' config/config.yaml
-          yq -i '.wechat.sinceDate="${{ secrets.SINCE_DATE }}"' config/config.yaml
-          yq -i '.wechat.birthday="${{ secrets.BIRTHDAY }}"' config/config.yaml
+          yq -i '.wechat.appId="${{ env.APP_ID }}"' config/config.yaml
+          yq -i '.wechat.appSecret="${{ env.APP_SECRET }}"' config/config.yaml
+          yq -i '.wechat.userId="${{ env.USER_ID }}"' config/config.yaml
+          yq -i '.wechat.templateId="${{ env.TEMPLATE_ID }}"' config/config.yaml
+          yq -i '.wechat.weatherKey="${{ env.WEATHER_KEY }}"' config/config.yaml
+          yq -i '.wechat.rainbowKey="${{ env.RAINBOW_KEY }}"' config/config.yaml
+          yq -i '.wechat.nickName="${{ env.NICK_NAME }}"' config/config.yaml
+          yq -i '.wechat.userCity="${{ env.USER_CITY }}"' config/config.yaml
+          yq -i '.wechat.sinceDate="${{ env.SINCE_DATE }}"' config/config.yaml
+          yq -i '.wechat.birthday="${{ env.BIRTHDAY }}"' config/config.yaml
       - name: View YAML
         run: cat config/config.yaml
       - name: live
