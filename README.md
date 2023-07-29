@@ -33,6 +33,9 @@
 3.申请天行数行[控制台](https://www.tianapi.com/console/)
 <img width="1245" alt="image" src="https://github.com/JsonMs/wechat-live-push/assets/50287117/0447293b-388f-48cd-815b-d34cfca2cb11">
 
+申请如下接口
+ - 🌈 彩虹屁(https://www.tianapi.com/apiview/181)
+
 # 如何部署
 
 1.Fork到本地仓库
