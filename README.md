@@ -15,7 +15,7 @@
 
 
 # 推送成果
-<img width="400" height="600" src="https://github.com/JsonMs/wechat-live-push/assets/50287117/3a1e22ac-4389-44ee-811e-6e00585da18c"/>
+<img width="400" height="600" src="https://github.com/JsonMs/wechat-live-push/assets/50287117/873c75ac-2a6c-495f-acc5-ed8f6324d6d4"/>
 
 # 准备工作
 1.微信公众号接口测试账号[申请](https://github.com/JsonMs/wechat-live-push/assets/50287117/3a1e22ac-4389-44ee-811e-6e00585da18c)
