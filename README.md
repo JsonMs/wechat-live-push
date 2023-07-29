@@ -1,5 +1,5 @@
 <div align="center">
-    <h1 align="center">wechat-public-account-push</h1>
+    <h1 align="center">wechat-live-push</h1>
 
 [![GitHub Stars](https://img.shields.io/github/stars/JsonMs/wechat-live-push?style=flat)](https://github.com/JsonMs/wechat-live-push/stargazers)
 [![GitHub Forks](https://img.shields.io/github/forks/JsonMs/wechat-live-push?style=flat)](https://github.com/JsonMs/wechat-live-push/network/members)
