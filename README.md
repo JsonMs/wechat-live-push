@@ -42,6 +42,7 @@
 <img width="1602" alt="image" src="https://github.com/JsonMs/wechat-live-push/assets/50287117/7562aed8-53c8-44ff-9300-da715ca95e1c">
 
 2.配置定时任务的需要的密钥，可参照本代码配置自行配置
+ps: 如果要配置农历生日请配置BIRTHDAY值前面带`r`（"r2000-01-01"）
 <img width="1500" alt="image" src="https://github.com/JsonMs/wechat-live-push/assets/50287117/bfebe4ff-1afe-47a7-b711-6f855c7959eb">
 
 3.设置定时任务时间
